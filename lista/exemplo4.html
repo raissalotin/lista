@@ -1,7 +1,16 @@
+<meta charset="UTF-8">
 <script>
+    let listaNomes = ["Alberto", " Maria",  " Rafael", " Eloisa", " João", "Amanda", " Eduardo"]
+    let nomesA = []
+    let outrosNomes = []
+    for (let iniciais of listaNomes) {
+        if (iniciais.charAt(0) === "A") {
+            nomesA.push(iniciais)
+        }
+        else {
+            outrosNomes.push(iniciais)
+        }
 
-    let nomes = ["alberto" ,"maria", "rafael", "eloisa", "joao", "amanda", "eduardo"]
-let nomesA = []
-let outrosNomes = []
-
+    }
+    document.write(`Nomes com a : ${nomesA}</br> Outros nomes : ${outrosNomes}`);
 </script>
