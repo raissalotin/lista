@@ -1,0 +1,9 @@
+<meta charset="UTF-8">
+<script>
+    const vezes = Number(prompt("Quantos nomes vão ser inseridos?"))
+    let   listaDeNomes = [ ];
+    for (contador = 1;  contador  <= vezes ;  contador++) {
+        listaDeNomes.push(prompt(`Nome: `));
+    }
+    document.write(listaDeNomes.join(",  "));
+</script>
