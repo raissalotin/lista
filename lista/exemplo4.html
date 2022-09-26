@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <script>
-    let listaNomes = ["Alberto", "Maria",  " Rafael", " Eloisa", " João", "Amanda", " Eduardo"]
+    let listaNomes = ["Alberto", "Maria", "Rafael", "Eloisa", "João", "Amanda", "Eduardo"]
     let nomesA = []
     let outrosNomes = []
     for (let iniciais of listaNomes) {
@@ -12,5 +12,6 @@
         }
 
     }
-    document.write(`Nomes com a : ${nomesA.sort()}</br> Outros nomes : ${outrosNomes.sort()}`);
+    document.write(`Nomes com a letra A:  ${nomesA.sort().join(", ")}</br> `)
+    document.write(`Outros nomes: ${outrosNomes.sort().join(", ")}`);
 </script>
