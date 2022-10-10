@@ -5,12 +5,45 @@
     // let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
     //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
 
-    //ENTRADA
-
-
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    listaDeNomes.sort();
+    let nomesA = [];
+    let nomesE = [];
+    let nomesI = [];
+    let nomesO = [];
+    let nomesU = [];
     //PROCESSAMENTO
 
+    for (let nome of listaDeNomes) {
+        switch (nome[0]) {
+            case "A":
+                nomesA.push(nome)
+                break;
 
+            case "E":
+                nomesE.push(nome)
+                break;
+            
+            case "I":
+                nomesI.push(nome)
+                break;
+                
+            case "O":
+                nomesO.push(nome)
+                break;
+               
+             case "U":
+                nomesU.push(nome)
+                break;
+
+        }
+    }
+    document.write(`Lista de nomes completa: ${listaDeNomes};</br></br>
+                    Nomes começam com A: ${nomesA}</br></br>
+                    Nomes começam com E: ${nomesE}</br></br>
+                    Nomes começam com I: ${nomesI}</br></br>
+                    Nomes começam com O: ${nomesO}</br></br>
+                    Nomes começam com U: ${nomesU}`)
     //SAÍDA
 
 </script>
